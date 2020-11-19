@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import { FlexContainer } from "../components/FlexContaner";
 import Subtitle from "../components/Subtitle";
+import graphic from "../assets/graphic.svg";
 
 interface IProps {}
 
@@ -12,6 +13,8 @@ const Root = styled.div`
   align-items: center;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
   padding: 56px 0;
+  background: url(${graphic}) center no-repeat;
+  min-height: 811px;
 `;
 const Title = styled.div`
   width: 894px;
@@ -30,7 +33,6 @@ const Title = styled.div`
   @media (max-width: 360px) {
     font-size: 28px;
     line-height: 38px;
-    //justify-content: ;
   }
 `;
 

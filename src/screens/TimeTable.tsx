@@ -40,10 +40,10 @@ const TimeTable: React.FC<IProps> = () => {
   return (
     <Root>
       <Devider num={2} description={"Расписание"} />
-      <FlexContainer>
-        {TimeTableData.map((event, index) => {
-          <Event {...event} key={index} />;
-        })}
+      <FlexContainer flexDirection={"column"}>
+        {TimeTableData.map((event, index) => (
+          <Event {...event} key={index} />
+        ))}
       </FlexContainer>
     </Root>
   );

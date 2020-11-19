@@ -14,8 +14,12 @@ const Root = styled.div`
 const Devider: React.FC<IProps> = ({ description, num }) => {
   return (
     <Root>
-      <Subtitle color={"#00A575"}>(0{num})</Subtitle>
-      <Subtitle style={{ textTransform: "uppercase" }}>{description}</Subtitle>
+      <Subtitle color={"#00A575"} style={{ padding: "33px" }}>
+        (0{num})
+      </Subtitle>
+      <Subtitle style={{ textTransform: "uppercase", padding: "33px" }}>
+        {description}
+      </Subtitle>
     </Root>
   );
 };

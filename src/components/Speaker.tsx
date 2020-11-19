@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
+import { FlexContainer } from "./FlexContaner";
 
 interface IProps {
   pic?: string;
@@ -7,9 +8,9 @@ interface IProps {
   position?: string;
   isReverse?: boolean;
 }
-const Root = styled.div<IProps>`
+const Root = styled.div`
   display: flex;
-  flex-direction: ${({ isReverse }) => "row-reverse" ?? "row"};
+  margin: 40px;
 `;
 const SubtitleUpper = styled.div`
   font-family: IBM Plex Sans;
@@ -35,11 +36,11 @@ const Sub = styled.div`
   color: rgba(255, 255, 255, 0.8);
 `;
 
-const Speaker: React.FC<IProps> = ({ pic, position, name }) => {
+const Speaker: React.FC<IProps> = ({ pic, position, name, isReverse }) => {
   return (
-    <Root>
+    <Root style={{ flexDirection: isReverse ? "column" : "column-reverse" }}>
+      <Sub style={{ padding: "10px 0" }}>{position}</Sub>
       <SubtitleUpper>{name}</SubtitleUpper>
-      <Sub>{position}</Sub>
       <img src={pic} alt="speaker" />
     </Root>
   );

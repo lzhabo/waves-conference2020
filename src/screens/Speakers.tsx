@@ -9,6 +9,7 @@ interface IProps {}
 const Root = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 240px 0;
 `;
 const speakersData = [
   {
@@ -40,24 +41,25 @@ const ScrollContainer = styled.div`
   overflow-x: auto;
   display: flex;
   max-width: 100vw;
-  & > * {
-    margin: 0 10px;
-  }
-  & > :first-of-type {
-    margin-left: 24px;
-  }
-  & > :last-child {
-    margin-right: 24px;
-  }
+  //& > * {
+  //  margin: 0 40px;
+  //}
+  //}
+  //& > :first-of-type {
+  //  margin-left: 24px;
+  //}
+  //& > :last-child {
+  //  margin-right: 24px;
+  //}
 `;
 const Speakers: React.FC<IProps> = () => {
   return (
     <Root>
       <Devider num={3} description={"Спикеры"} />
       <ScrollContainer>
-        {speakersData.map((speaker, index) => {
-          <Speaker {...speaker} key={index} />;
-        })}
+        {speakersData.map((speaker, index) => (
+          <Speaker {...speaker} key={index} />
+        ))}
       </ScrollContainer>
     </Root>
   );

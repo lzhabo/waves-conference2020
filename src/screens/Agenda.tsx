@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Subtitle from "../components/Subtitle";
 import Title from "../components/Title";
 import money from "../assets/money.svg";
 import man from "../assets/man.svg";
@@ -14,6 +13,19 @@ const Root = styled.div`
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
   align-items: center;
   justify-content: space-around;
+  padding: 160px 0;
+`;
+const Subtitle = styled.div`
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+
+  letter-spacing: -0.01em;
+
+  color: rgba(255, 255, 255, 0.8);
+  padding: 72px 0;
 `;
 
 const Agenda: React.FC<IProps> = () => {

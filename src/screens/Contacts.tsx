@@ -22,6 +22,8 @@ const Title = styled.div`
   text-transform: uppercase;
 
   color: #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+  padding: 23px 33px 56px;
 `;
 const SubtitleUpper = styled.div`
   font-family: IBM Plex Sans;
@@ -42,23 +44,24 @@ const Contacts: React.FC<IProps> = () => {
     <Root>
       <Devider num={4} description={"будем на связи"} />
       <Title>Контакты</Title>
-      <FlexContainer justifyContent={"space-between"}>
+      <FlexContainer justifyContent={"space-around"} padding={"56px 0"}>
         <Circle text={"Напиши привет"} />
-        <FlexContainer justifyContent={"space-between"}>
-          <SubtitleUpper>
-            Москва
-            <br />
-            Тверская улица, 9 Москва, Россия, 125009 <br />
-            (999) 123-4567
-            <br />
-            hello@we.org
-          </SubtitleUpper>
-          <SubtitleUpper>
-            Тула <br />
-            Октябрьская улица, 24 Тула, Россия, 300002 <br />
-            (999) 123-4567
-          </SubtitleUpper>
-        </FlexContainer>
+
+        <SubtitleUpper>
+          Москва
+          <br />
+          <br />
+          Тверская улица, 9 Москва, Россия, 125009 <br />
+          (999) 123-4567
+          <br />
+          <br />
+          hello@we.org
+        </SubtitleUpper>
+        <SubtitleUpper>
+          Тула <br /> <br />
+          Октябрьская улица, 24 Тула, Россия, 300002 <br /> <br />
+          (999) 123-4567
+        </SubtitleUpper>
       </FlexContainer>
     </Root>
   );
