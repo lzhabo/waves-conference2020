@@ -31,6 +31,7 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   background-color: black;
+  padding: 0 40px;
 `;
 
 const App: React.FC<IProps> = () => {

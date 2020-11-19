@@ -1,16 +1,40 @@
 import styled from "@emotion/styled";
 import React from "react";
 import Devider from "../components/Devider";
-import Title from "../components/Title";
 import { FlexContainer } from "../components/FlexContaner";
 import Circle from "../components/Circle";
-import Subtitle from "../components/Subtitle";
 
 interface IProps {}
 
 const Root = styled.div`
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+`;
+const Title = styled.div`
+  font-family: Tenor Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 66px;
+
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+`;
+const SubtitleUpper = styled.div`
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  max-width: 360px;
 `;
 
 const Contacts: React.FC<IProps> = () => {
@@ -18,20 +42,22 @@ const Contacts: React.FC<IProps> = () => {
     <Root>
       <Devider num={4} description={"будем на связи"} />
       <Title>Контакты</Title>
-      <FlexContainer>
+      <FlexContainer justifyContent={"space-between"}>
         <Circle text={"Напиши привет"} />
         <FlexContainer justifyContent={"space-between"}>
-          <Subtitle>
+          <SubtitleUpper>
             Москва
             <br />
-            Тверская улица, 9 Москва, Россия, 125009 (999) 123-4567
+            Тверская улица, 9 Москва, Россия, 125009 <br />
+            (999) 123-4567
             <br />
             hello@we.org
-          </Subtitle>
-          <Subtitle>
+          </SubtitleUpper>
+          <SubtitleUpper>
             Тула <br />
-            Октябрьская улица, 24 Тула, Россия, 300002 (999) 123-4567
-          </Subtitle>
+            Октябрьская улица, 24 Тула, Россия, 300002 <br />
+            (999) 123-4567
+          </SubtitleUpper>
         </FlexContainer>
       </FlexContainer>
     </Root>

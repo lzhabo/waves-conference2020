@@ -7,6 +7,8 @@ interface IProps {}
 const Root = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
 `;
 
 const Footer: React.FC<IProps> = () => {

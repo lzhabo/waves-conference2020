@@ -12,7 +12,8 @@ const Root = styled.div`
   align-items: center;
   border-radius: 50%;
   background-color: #00a575;
-  max-width: 200px; ;
+  width: 200px;
+  height: 200px;
 `;
 
 const Circle: React.FC<IProps> = ({ text }) => {
