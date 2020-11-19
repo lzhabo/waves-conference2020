@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from "@emotion/styled";
+import React from "react";
+import { injectGlobal } from "emotion";
+import tenor from "./fonts/TenorSans-Regular.ttf";
+import ibm from "./fonts/IBMPlexSans-Regular.ttf";
+import FirstPage from "./screens/FirstPage";
+import Header from "./screens/Header";
+import Agenda from "./screens/Agenda";
+import TimeTable from "./screens/TimeTable";
 
-function App() {
+injectGlobal`
+  * {
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: Tenor Sans;
+    src: url(${tenor})   ;
+  }
+  @font-face {
+    font-family: IBM Plex Sans;
+    src: url(${ibm});
+  }
+  }`;
+
+interface IProps {}
+
+const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+`;
+
+const App: React.FC<IProps> = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Root>
+      <Header />
+      <FirstPage />
+      <Agenda />
+      <TimeTable />
+    </Root>
   );
-}
-
+};
 export default App;
