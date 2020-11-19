@@ -7,6 +7,9 @@ import FirstPage from "./screens/FirstPage";
 import Header from "./screens/Header";
 import Agenda from "./screens/Agenda";
 import TimeTable from "./screens/TimeTable";
+import Footer from "./screens/Footer";
+import Contacts from "./screens/Contacts";
+import Speakers from "./screens/Speakers";
 
 injectGlobal`
   * {
@@ -37,6 +40,9 @@ const App: React.FC<IProps> = () => {
       <FirstPage />
       <Agenda />
       <TimeTable />
+      <Speakers />
+      <Contacts />
+      <Footer />
     </Root>
   );
 };

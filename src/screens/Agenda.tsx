@@ -4,6 +4,7 @@ import Subtitle from "../components/Subtitle";
 import Title from "../components/Title";
 import money from "../assets/money.svg";
 import man from "../assets/man.svg";
+import Devider from "../components/Devider";
 
 interface IProps {}
 
@@ -16,8 +17,7 @@ const Root = styled.div`
 const Agenda: React.FC<IProps> = () => {
   return (
     <Root>
-      <Subtitle>(01)</Subtitle>
-      <Subtitle>ПОВЕСТКА</Subtitle>
+      <Devider num={1} description={"повестка"} />
       <img src={money} alt="moneyPic" />
       <img src={man} alt="man" />
       <Title>

@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import React from "react";
 import { FlexContainer } from "../components/FlexContaner";
-import Subtitle from "../components/Subtitle";
 import Event from "../components/Event";
+import Devider from "../components/Devider";
 
 interface IProps {}
 
@@ -39,10 +39,7 @@ const TimeTableData = [
 const TimeTable: React.FC<IProps> = () => {
   return (
     <Root>
-      <FlexContainer>
-        <Subtitle>(02)</Subtitle>
-        <Subtitle>Расписание</Subtitle>
-      </FlexContainer>
+      <Devider num={2} description={"Расписание"} />
       <FlexContainer>
         {TimeTableData.map((event, index) => {
           <Event {...event} key={index} />;
