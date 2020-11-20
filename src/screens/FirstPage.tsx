@@ -37,7 +37,15 @@ const Title = styled.div`
     line-height: 38px;
   }
 `;
-
+const Container = styled.div`
+  justify-content: space-between;
+  align-self: flex-end;
+`;
+const Div = styled.div`
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+`;
 const FirstPage: React.FC<IProps> = () => {
   return (
     <Root>
@@ -48,9 +56,8 @@ const FirstPage: React.FC<IProps> = () => {
       <FlexContainer justifyContent={"space-between"} alignItems={"center"}>
         <Subtitle>ЛИСТАЙ ВНИЗ</Subtitle>
         <FlexContainer flexDirection={"column"}>
-          <Subtitle style={{ textAlign: "right" }}>12 ДЕКАБРЯ </Subtitle>
-          <Subtitle style={{ textAlign: "left" }} color={"#00A575"}>
-            ONLINE
+          <Subtitle style={{ textAlign: "right" }}>
+            12 ДЕКАБРЯ <br /> <div style={{ color: "#00A575" }}>ONLINE</div>
           </Subtitle>
         </FlexContainer>
       </FlexContainer>
