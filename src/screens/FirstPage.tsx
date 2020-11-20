@@ -30,7 +30,7 @@ const Title = styled.div`
   text-align: center;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-
+  padding-top: 33px;
   color: #ffffff;
   @media (max-width: 360px) {
     font-size: 28px;
@@ -42,10 +42,9 @@ const FirstPage: React.FC<IProps> = () => {
   return (
     <Root>
       <Title>
-        Waves Enterprise <br />
-        Conference 2020
+        Waves Enterprise <br /> Conference 2020
       </Title>
-      <SizedBox height={452} />
+      <SizedBox height={424} />
       <FlexContainer justifyContent={"space-between"} alignItems={"center"}>
         <Subtitle>ЛИСТАЙ ВНИЗ</Subtitle>
         <FlexContainer flexDirection={"column"}>

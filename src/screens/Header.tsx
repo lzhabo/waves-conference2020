@@ -29,7 +29,12 @@ const Header: React.FC<IProps> = () => {
         </Subtitle>
       </div>
       <img src={logo} alt="logo" />
-      <img src={menu} alt="logo" style={{ cursor: "pointer" }} />
+      <img
+        src={menu}
+        alt="logo"
+        style={{ cursor: "pointer" }}
+        onClick={() => alert("submit")}
+      />
     </Root>
   );
 };

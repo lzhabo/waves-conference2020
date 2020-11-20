@@ -7,6 +7,24 @@ import TimeTable from "./screens/TimeTable";
 import Footer from "./screens/Footer";
 import Contacts from "./screens/Contacts";
 import Speakers from "./screens/Speakers";
+import { injectGlobal } from "emotion";
+import tenor from "./fonts/TenorSans-Regular.ttf";
+import ibm from "./fonts/IBMPlexSans-Regular.ttf";
+import RunningText from "./components/RunningText";
+
+injectGlobal`
+  * {
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: Tenor Sans;
+    src: url(${tenor})   ;
+  }
+  @font-face {
+    font-family: IBM Plex Sans;
+    src: url(${ibm});
+  }
+  }`;
 
 interface IProps {}
 
@@ -23,6 +41,7 @@ const App: React.FC<IProps> = () => {
       <Header />
       <FirstPage />
       <Agenda />
+      {/*<RunningText />*/}
       <TimeTable />
       <Speakers />
       <Contacts />
