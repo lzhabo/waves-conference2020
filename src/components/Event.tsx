@@ -15,12 +15,7 @@ const Root = styled.div`
   display: flex;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
   padding: 56px 0;
-`;
-const Container = styled.div`
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  //max-width: 660px;
+  justify-content: center;
 `;
 
 const Event: React.FC<IProps> = ({ time, title, subtitle }) => {
@@ -29,12 +24,10 @@ const Event: React.FC<IProps> = ({ time, title, subtitle }) => {
       <FlexContainer>
         <Subtitle color={"#00A575"}>{time}</Subtitle>
       </FlexContainer>
-      {/*<FlexContainer flexDirection={"column"} css={Container}>*/}
-      <Container>
+      <FlexContainer flexDirection={"column"}>
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
-      </Container>
-      {/*</FlexContainer>*/}
+      </FlexContainer>
     </Root>
   );
 };

@@ -10,7 +10,7 @@ interface IProps {}
 const Root = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  //align-items: center;
   padding: 20px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
 `;

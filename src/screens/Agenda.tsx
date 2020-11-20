@@ -44,7 +44,8 @@ const Agenda: React.FC<IProps> = () => {
           будут посвящены применению <br /> блокчейн-технологий в новых реалиях
         </Title>
         <Subtitle>
-          Преодоление кризиса с помощью технологических use-cases
+          Преодоление кризиса с помощью <br />
+          технологических use-cases
         </Subtitle>
         <img src={money} alt="money" />
         <Subtitle>Появление цифрового рубля</Subtitle>
