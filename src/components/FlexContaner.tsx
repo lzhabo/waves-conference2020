@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export interface IFlexContainerProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLDivElement>,
@@ -22,6 +21,15 @@ export interface IFlexContainerProps
     | "unset"
     | "flex-end"
     | "flex-start";
+  alignContent?:
+    | "start"
+    | "end"
+    | "center"
+    | "space-between"
+    | "space-around"
+    | "space-evenly"
+    | "stretch";
+
   crossAxisSize?: "min" | "max";
 }
 
@@ -31,6 +39,7 @@ export const FlexContainer: React.FunctionComponent<IFlexContainerProps> = ({
   flexDirection,
   justifyContent,
   alignItems,
+  alignContent,
   crossAxisSize,
   style,
   ...props
@@ -44,6 +53,7 @@ export const FlexContainer: React.FunctionComponent<IFlexContainerProps> = ({
       flexDirection: flexDirection ?? "row",
       justifyContent: justifyContent ?? "start",
       alignItems: alignItems ?? "start",
+      alignContent: alignContent ?? "normal",
       padding: padding,
       ...style,
     }}

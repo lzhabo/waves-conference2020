@@ -3,13 +3,13 @@ import React from "react";
 import { FlexContainer } from "../components/FlexContaner";
 import Subtitle from "../components/Subtitle";
 import graphic from "../assets/graphic.svg";
+import SizedBox from "../components/SizedBox";
 
 interface IProps {}
 
 const Root = styled.div`
   display: flex;
   flex-direction: column;
-  //justify-content: center;
   align-items: center;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
   padding: 56px 0;
@@ -37,15 +37,7 @@ const Title = styled.div`
     line-height: 38px;
   }
 `;
-const Container = styled.div`
-  justify-content: space-between;
-  align-self: flex-end;
-`;
-const Div = styled.div`
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-`;
+
 const FirstPage: React.FC<IProps> = () => {
   return (
     <Root>
@@ -53,6 +45,7 @@ const FirstPage: React.FC<IProps> = () => {
         Waves Enterprise <br />
         Conference 2020
       </Title>
+      <SizedBox height={452} />
       <FlexContainer justifyContent={"space-between"} alignItems={"center"}>
         <Subtitle>ЛИСТАЙ ВНИЗ</Subtitle>
         <FlexContainer flexDirection={"column"}>

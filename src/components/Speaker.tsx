@@ -21,7 +21,7 @@ const SubtitleUpper = styled.div`
 
   letter-spacing: -0.01em;
   text-transform: uppercase;
-
+  padding: 4px 0;
   color: #ffffff;
 `;
 const Sub = styled.div`
@@ -32,15 +32,17 @@ const Sub = styled.div`
   line-height: 28px;
 
   letter-spacing: -0.01em;
-
+  padding: 4px 0;
   color: rgba(255, 255, 255, 0.8);
 `;
 
 const Speaker: React.FC<IProps> = ({ pic, position, name, isReverse }) => {
   return (
     <Root style={{ flexDirection: isReverse ? "column" : "column-reverse" }}>
-      <Sub style={{ padding: "10px 0" }}>{position}</Sub>
-      <SubtitleUpper>{name}</SubtitleUpper>
+      <div style={{ padding: isReverse ? "0 0 32px" : "32px 0" }}>
+        <SubtitleUpper>{name}</SubtitleUpper>
+        <Sub>{position}</Sub>
+      </div>
       <img src={pic} alt="speaker" />
     </Root>
   );
