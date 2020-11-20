@@ -15,7 +15,12 @@ const Footer: React.FC<IProps> = () => {
   return (
     <Root>
       <Subtitle>©2020</Subtitle>
-      <Subtitle>(BACK TO TOP)</Subtitle>
+      <Subtitle
+        onClick={() => window.scrollTo(0, 0)}
+        style={{ cursor: "pointer" }}
+      >
+        (BACK TO TOP)
+      </Subtitle>
       <Subtitle>ALL RIGHTS RESERVED</Subtitle>
     </Root>
   );

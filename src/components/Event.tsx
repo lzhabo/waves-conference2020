@@ -15,19 +15,23 @@ const Root = styled.div`
   display: flex;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
   padding: 56px 0;
-  justify-content: center;
+  justify-content: space-around;
 `;
-
+const Description = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-width: 660px;
+`;
 const Event: React.FC<IProps> = ({ time, title, subtitle }) => {
   return (
     <Root>
       <FlexContainer>
         <Subtitle color={"#00A575"}>{time}</Subtitle>
       </FlexContainer>
-      <FlexContainer flexDirection={"column"}>
+      <Description>
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
-      </FlexContainer>
+      </Description>
     </Root>
   );
 };
