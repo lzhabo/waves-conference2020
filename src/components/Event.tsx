@@ -14,21 +14,23 @@ interface IProps {
 const Root = styled.div`
   display: flex;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
-  padding: 56px 0;
   justify-content: space-around;
+  padding: 56px 100px;
+  width: 100%;
 `;
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  min-width: 660px;
+  width: 100%;
+  max-width: 660px;
 `;
 const Event: React.FC<IProps> = ({ time, title, subtitle }) => {
   return (
     <Root>
-      <FlexContainer>
+      <FlexContainer style={{ flex: 2 }}>
         <Subtitle color={"#00A575"}>{time}</Subtitle>
       </FlexContainer>
-      <Description>
+      <Description style={{ flex: 3 }}>
         <Title>{title}</Title>
         <Subtitle>{subtitle}</Subtitle>
       </Description>

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import { FlexContainer } from "../components/FlexContaner";
 import Event from "../components/Event";
-import Devider from "../components/Devider";
+import Divider from "../components/Divider";
 
 interface IProps {}
 
@@ -39,7 +39,7 @@ const TimeTableData = [
 const TimeTable: React.FC<IProps> = () => {
   return (
     <Root>
-      <Devider num={2} description={"Расписание"} />
+      <Divider num={2} description={"Расписание"} bordered />
       <FlexContainer flexDirection={"column"}>
         {TimeTableData.map((event, index) => (
           <Event {...event} key={index} />

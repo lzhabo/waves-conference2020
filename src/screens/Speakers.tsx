@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Devider from "../components/Devider";
+import Divider from "../components/Divider";
 import speaker from "../assets/speaker.svg";
 import Speaker from "../components/Speaker";
 
@@ -55,7 +55,7 @@ const ScrollContainer = styled.div`
 const Speakers: React.FC<IProps> = () => {
   return (
     <Root>
-      <Devider num={3} description={"Спикеры"} />
+      <Divider num={3} description={"Спикеры"} />
       <ScrollContainer>
         {speakersData.map((speaker, index) => (
           <Speaker {...speaker} key={index} />

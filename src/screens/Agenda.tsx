@@ -3,7 +3,7 @@ import React from "react";
 import Title from "../components/Title";
 import money from "../assets/money.svg";
 import man from "../assets/man.svg";
-import Devider from "../components/Devider";
+import Divider from "../components/Divider";
 import { FlexContainer } from "../components/FlexContaner";
 
 interface IProps {}
@@ -31,7 +31,7 @@ const Agenda: React.FC<IProps> = () => {
   return (
     <Root>
       <FlexContainer flexDirection={"column"}>
-        <Devider num={1} description={"повестка"} />
+        <Divider num={1} description={"повестка"} />
         <img src={man} alt="man" />
         <Subtitle>
           Самоопределение блокчейн-технологии после <br /> принятия закона о ЦФА

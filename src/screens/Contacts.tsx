@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Devider from "../components/Devider";
+import Divider from "../components/Divider";
 import { FlexContainer } from "../components/FlexContaner";
 import Circle from "../components/Circle";
 
@@ -42,7 +42,7 @@ const SubtitleUpper = styled.div`
 const Contacts: React.FC<IProps> = () => {
   return (
     <Root>
-      <Devider num={4} description={"будем на связи"} />
+      <Divider num={4} description={"будем на связи"} />
       <Title>Контакты</Title>
       <FlexContainer justifyContent={"space-around"} padding={"56px 0"}>
         <Circle text={"Напиши привет"} />
