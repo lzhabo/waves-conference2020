@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import React from "react";
-import { FlexContainer } from "./FlexContaner";
 
 interface IProps {
   pic?: string;
@@ -32,7 +31,6 @@ const Sub = styled.div`
   line-height: 28px;
 
   letter-spacing: -0.01em;
-  padding: 4px 0;
   color: rgba(255, 255, 255, 0.8);
 `;
 

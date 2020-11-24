@@ -10,7 +10,6 @@ import Speakers from "./screens/Speakers";
 import { injectGlobal } from "emotion";
 import tenor from "./fonts/TenorSans-Regular.ttf";
 import ibm from "./fonts/IBMPlexSans-Regular.ttf";
-import RunningText from "./components/RunningText";
 
 injectGlobal`
   * {
@@ -34,14 +33,12 @@ const Root = styled.div`
   background-color: black;
   padding: 0 40px;
 `;
-
 const App: React.FC<IProps> = () => {
   return (
     <Root>
       <Header />
       <FirstPage />
       <Agenda />
-      {/*<RunningText />*/}
       <TimeTable />
       <Speakers />
       <Contacts />

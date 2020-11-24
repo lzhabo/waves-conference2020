@@ -41,16 +41,12 @@ const ScrollContainer = styled.div`
   overflow-x: auto;
   display: flex;
   max-width: 100vw;
-  //& > * {
-  //  margin: 0 40px;
-  //}
-  //}
-  //& > :first-of-type {
-  //  margin-left: 24px;
-  //}
-  //& > :last-child {
-  //  margin-right: 24px;
-  //}
+  & > :first-of-type {
+    margin-left: 0px;
+  }
+  & > :last-child {
+    margin-right: -40px;
+  }
 `;
 const Speakers: React.FC<IProps> = () => {
   return (

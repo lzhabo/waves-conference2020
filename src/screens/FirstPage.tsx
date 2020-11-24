@@ -14,9 +14,6 @@ const Root = styled.div`
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
   padding: 56px 0;
   background: url(${graphic}) center no-repeat;
-  min-height: 811px;
-  flex-wrap: nowrap;
-  align-content: space-evenly;
 `;
 const Title = styled.div`
   width: 894px;

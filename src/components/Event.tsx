@@ -31,7 +31,9 @@ const Event: React.FC<IProps> = ({ time, title, subtitle }) => {
         <Subtitle color={"#00A575"}>{time}</Subtitle>
       </FlexContainer>
       <Description style={{ flex: 3 }}>
-        <Title>{title}</Title>
+        <Title style={{ paddingBottom: subtitle.length > 0 ? "32px" : "" }}>
+          {title}
+        </Title>
         <Subtitle>{subtitle}</Subtitle>
       </Description>
     </Root>

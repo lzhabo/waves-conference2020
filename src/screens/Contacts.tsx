@@ -43,8 +43,8 @@ const Contacts: React.FC<IProps> = () => {
   return (
     <Root>
       <Divider num={4} description={"будем на связи"} />
-      <Title>Контакты</Title>
-      <FlexContainer justifyContent={"space-around"} padding={"56px 0"}>
+      <Title style={{ paddingLeft: 100 }}>Контакты</Title>
+      <FlexContainer justifyContent={"space-around"} padding={"56px"}>
         <Circle text={"Напиши привет"} />
 
         <SubtitleUpper>
