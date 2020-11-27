@@ -24,7 +24,12 @@ const Title = styled.div`
 
   color: #ffffff;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
-  padding: 23px 33px 56px;
+  padding: 23px 33px 56px 100px;
+  @media (max-width: 360px) {
+    font-size: 48px;
+    line-height: 58px;
+    padding: 0 0 56px;
+  }
 `;
 const SubtitleUpper = styled.div`
   font-family: IBM Plex Sans;
@@ -54,14 +59,20 @@ const Phones = styled.div`
     padding: 56px 0;
   }
 `;
+const Addresses = styled.div`
+  display: flex;
+  @media (max-width: 360px) {
+    flex-direction: column;
+  }
+`;
 const Contacts: React.FC<IProps> = () => {
   return (
     <Root>
       <Divider num={4} description={"будем на связи"} />
-      <Title style={{ paddingLeft: 100 }}>Контакты</Title>
+      <Title>Контакты</Title>
       <Phones>
         <Circle text={"Напиши привет"} />
-        <div>
+        <Addresses>
           <SubtitleUpper>
             Москва
             <br />
@@ -77,7 +88,7 @@ const Contacts: React.FC<IProps> = () => {
             Октябрьская улица, 24 Тула, Россия, 300002 <br /> <br />
             (999) 123-4567
           </SubtitleUpper>
-        </div>
+        </Addresses>
       </Phones>
     </Root>
   );

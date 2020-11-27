@@ -41,7 +41,7 @@ const App: React.FC<IProps> = () => {
     <Root>
       <Header />
       <FirstPage />
-      {/*<Agenda />*/}
+      <Agenda />
       <TimeTable />
       <Speakers />
       <Contacts />

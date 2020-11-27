@@ -38,6 +38,7 @@ const Title = styled.div`
     line-height: 38px;
     width: 285px;
     height: 76px;
+    //align-items: baseline;
   }
 `;
 

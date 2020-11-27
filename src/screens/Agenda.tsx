@@ -15,6 +15,7 @@ const Root = styled.div`
   padding: 160px 0;
   @media (max-width: 360px) {
     justify-content: center;
+    flex-direction: column;
   }
 `;
 const Subtitle = styled.div`
@@ -36,13 +37,26 @@ const Body = styled.div`
     flex-direction: row;
   }
 `;
+const Img = styled.img`
+  @media (max-width: 360px) {
+    width: 360px;
+    height: 563px;
+  }
+`;
+const Img2 = styled.img`
+  @media (max-width: 360px) {
+    width: 280px;
+    height: 436px;
+    margin-left: -16px;
+  }
+`;
 
 const Agenda: React.FC<IProps> = () => {
   return (
     <Root>
       <FlexContainer flexDirection={"column"}>
         <Divider num={1} description={"повестка"} />
-        <img src={man} alt="man" />
+        <Img src={man} alt="man" />
         <Subtitle>
           Самоопределение блокчейн-технологии после <br /> принятия закона о ЦФА
         </Subtitle>
@@ -56,7 +70,7 @@ const Agenda: React.FC<IProps> = () => {
           Преодоление кризиса с помощью <br />
           технологических use-cases
         </Subtitle>
-        <img src={money} alt="money" />
+        <Img2 src={money} alt="money" />
         <Subtitle>Появление цифрового рубля</Subtitle>
       </FlexContainer>
     </Root>
