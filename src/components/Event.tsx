@@ -15,7 +15,7 @@ const Root = styled.div`
   justify-content: space-around;
   padding: 56px 100px;
   width: 100%;
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     flex-direction: column;
     padding: 56px 0;
   }
@@ -30,7 +30,7 @@ const Description = styled.div`
 const Time = styled.div`
   display: flex;
   flex: 2;
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     padding-bottom: 56px;
   }
 `;

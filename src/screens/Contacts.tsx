@@ -25,7 +25,7 @@ const Title = styled.div`
   color: #ffffff;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
   padding: 23px 33px 56px 100px;
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     font-size: 48px;
     line-height: 58px;
     padding: 0 0 56px;
@@ -43,7 +43,7 @@ const SubtitleUpper = styled.div`
 
   color: #ffffff;
   max-width: 360px;
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     padding-bottom: 56px;
   }
 `;
@@ -52,7 +52,7 @@ const Phones = styled.div`
   justify-content: space-around;
   padding: 56px;
 
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     flex-direction: column-reverse;
     padding: 0;
     align-items: center;
@@ -61,7 +61,7 @@ const Phones = styled.div`
 `;
 const Addresses = styled.div`
   display: flex;
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     flex-direction: column;
   }
 `;

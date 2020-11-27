@@ -13,7 +13,7 @@ const Root = styled.div`
   align-items: center;
   justify-content: space-around;
   padding: 160px 0;
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     justify-content: center;
     flex-direction: column;
   }
@@ -33,18 +33,18 @@ const Subtitle = styled.div`
 const Body = styled.div`
   display: flex;
   flex-direction: column;
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     flex-direction: row;
   }
 `;
 const Img = styled.img`
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     width: 360px;
     height: 563px;
   }
 `;
 const Img2 = styled.img`
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     width: 280px;
     height: 436px;
     margin-left: -16px;

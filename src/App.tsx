@@ -32,7 +32,7 @@ const Root = styled.div`
   flex-direction: column;
   background-color: black;
   padding: 0 40px;
-  @media (max-width: 360px) {
+  @media (min-width: 360px) {
     padding: 0 16px;
   } ;
 `;
