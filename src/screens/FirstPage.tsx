@@ -3,6 +3,7 @@ import React from "react";
 import { FlexContainer } from "../components/FlexContaner";
 import Subtitle from "../components/Subtitle";
 import graphic from "../assets/graphic.svg";
+import graphic2 from "../assets/small-graphic.svg";
 import SizedBox from "../components/SizedBox";
 
 interface IProps {}
@@ -14,6 +15,9 @@ const Root = styled.div`
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
   padding: 56px 0;
   background: url(${graphic}) center no-repeat;
+  @media (max-width: 360px) {
+    background: url(${graphic2}) center no-repeat;
+  }
 `;
 const Title = styled.div`
   width: 894px;
@@ -32,6 +36,8 @@ const Title = styled.div`
   @media (max-width: 360px) {
     font-size: 28px;
     line-height: 38px;
+    width: 285px;
+    height: 76px;
   }
 `;
 
@@ -46,7 +52,8 @@ const FirstPage: React.FC<IProps> = () => {
         <Subtitle>ЛИСТАЙ ВНИЗ</Subtitle>
         <FlexContainer flexDirection={"column"}>
           <Subtitle style={{ textAlign: "right" }}>
-            12 ДЕКАБРЯ <br /> <div style={{ color: "#00A575" }}>ONLINE</div>
+            12 ДЕКАБРЯ <br />
+            <div style={{ color: "#00A575" }}>ONLINE</div>
           </Subtitle>
         </FlexContainer>
       </FlexContainer>

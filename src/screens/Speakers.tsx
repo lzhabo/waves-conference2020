@@ -10,6 +10,9 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   padding: 240px 0;
+  @media (max-width: 360px) {
+    padding: 64px 0;
+  }
 `;
 const speakersData = [
   {

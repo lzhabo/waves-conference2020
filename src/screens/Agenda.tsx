@@ -13,6 +13,9 @@ const Root = styled.div`
   align-items: center;
   justify-content: space-around;
   padding: 160px 0;
+  @media (max-width: 360px) {
+    justify-content: center;
+  }
 `;
 const Subtitle = styled.div`
   font-family: IBM Plex Sans;
@@ -25,6 +28,13 @@ const Subtitle = styled.div`
 
   color: rgba(255, 255, 255, 0.8);
   padding: 72px 0;
+`;
+const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 360px) {
+    flex-direction: row;
+  }
 `;
 
 const Agenda: React.FC<IProps> = () => {

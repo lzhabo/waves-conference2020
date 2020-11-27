@@ -11,8 +11,7 @@ const Subtitle = styled.div<IProps>`
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.01em;
-
-  color: ${({ color }) => color ?? "#fff"};
+  color: ${({ color }) => color ?? "rgba(255, 255, 255, 0.8)"};
 `;
 
 export default Subtitle;

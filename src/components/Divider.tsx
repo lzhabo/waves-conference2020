@@ -15,6 +15,9 @@ const Root = styled.div<{ bordered?: boolean }>`
   ${({ bordered }) =>
     bordered && "border-bottom: 2px solid rgba(255, 255, 255, 0.24)"};
   padding: 56px 100px;
+  @media (max-width: 360px) {
+    padding: 56px 0;
+  }
 `;
 
 const Divider: React.FC<IProps> = ({ description, num, bordered }) => {

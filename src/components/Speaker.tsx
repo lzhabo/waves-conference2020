@@ -7,9 +7,13 @@ interface IProps {
   position?: string;
   isReverse?: boolean;
 }
+
 const Root = styled.div`
   display: flex;
   margin: 40px;
+  @media (max-width: 360px) {
+    margin: 16px;
+  }
 `;
 const SubtitleUpper = styled.div`
   font-family: IBM Plex Sans;
@@ -34,6 +38,12 @@ const Sub = styled.div`
   color: rgba(255, 255, 255, 0.8);
 `;
 
+const Img = styled.img`
+  @media (max-width: 360px) {
+    width: 240px;
+    height: 320px;
+  }
+`;
 const Speaker: React.FC<IProps> = ({ pic, position, name, isReverse }) => {
   return (
     <Root style={{ flexDirection: isReverse ? "column" : "column-reverse" }}>
@@ -41,7 +51,7 @@ const Speaker: React.FC<IProps> = ({ pic, position, name, isReverse }) => {
         <SubtitleUpper>{name}</SubtitleUpper>
         <Sub>{position}</Sub>
       </div>
-      <img src={pic} alt="speaker" />
+      <Img src={pic} alt="speaker" />
     </Root>
   );
 };
