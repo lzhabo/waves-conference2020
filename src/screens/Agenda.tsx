@@ -13,7 +13,7 @@ const Root = styled.div`
   align-items: center;
   justify-content: space-around;
   padding: 160px 0;
-  @media (min-width: 360px) {
+  @media (max-width: 360px) {
     justify-content: center;
     flex-direction: column;
   }
@@ -30,21 +30,14 @@ const Subtitle = styled.div`
   color: rgba(255, 255, 255, 0.8);
   padding: 72px 0;
 `;
-const Body = styled.div`
-  display: flex;
-  flex-direction: column;
-  @media (min-width: 360px) {
-    flex-direction: row;
-  }
-`;
 const Img = styled.img`
-  @media (min-width: 360px) {
+  @media (max-width: 360px) {
     width: 360px;
     height: 563px;
   }
 `;
 const Img2 = styled.img`
-  @media (min-width: 360px) {
+  @media (max-width: 360px) {
     width: 280px;
     height: 436px;
     margin-left: -16px;

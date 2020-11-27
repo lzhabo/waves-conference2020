@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import React from "react";
+import React, { useState } from "react";
 import menu from "../assets/menu.svg";
 import logo from "../assets/we-logo.svg";
 
@@ -29,6 +29,8 @@ const Register = styled.div`
   }
 `;
 const Header: React.FC<IProps> = () => {
+  const [opened, setOpened] = useState(false);
+
   return (
     <Root>
       <Register>Зарегистрироваться</Register>
@@ -37,7 +39,7 @@ const Header: React.FC<IProps> = () => {
         src={menu}
         alt="logo"
         style={{ cursor: "pointer" }}
-        onClick={() => alert("submit")}
+        onClick={() => setOpened(true)}
       />
     </Root>
   );

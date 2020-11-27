@@ -11,7 +11,7 @@ interface IProps {
 const Root = styled.div`
   display: flex;
   margin: 40px;
-  @media (min-width: 360px) {
+  @media (max-width: 360px) {
     margin: 16px;
   }
 `;
@@ -39,7 +39,7 @@ const Sub = styled.div`
 `;
 
 const Img = styled.img`
-  @media (min-width: 360px) {
+  @media (max-width: 360px) {
     width: 240px;
     height: 320px;
   }

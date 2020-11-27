@@ -17,6 +17,7 @@ const Root = styled.div`
   background: url(${graphic}) center no-repeat;
   @media (max-width: 360px) {
     background: url(${graphic2}) center no-repeat;
+    //padding: 40px 0;
   }
 `;
 const Title = styled.div`
@@ -38,11 +39,10 @@ const Title = styled.div`
     line-height: 38px;
     width: 285px;
     height: 76px;
-    //align-items: baseline;
   }
 `;
 
-const FirstPage: React.FC<IProps> = () => {
+const Banner: React.FC<IProps> = () => {
   return (
     <Root>
       <Title>
@@ -61,4 +61,4 @@ const FirstPage: React.FC<IProps> = () => {
     </Root>
   );
 };
-export default FirstPage;
+export default Banner;
