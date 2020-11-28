@@ -11,12 +11,14 @@ interface IProps {}
 const Root = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 160px 0;
-  @media (max-width: 360px) {
-    justify-content: center;
-    flex-direction: column;
-  }
+
+  justify-content: center;
+  flex-direction: column;
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 160px 0;
+  } ;
 `;
 const Subtitle = styled.div`
   font-family: IBM Plex Sans;
@@ -24,24 +26,24 @@ const Subtitle = styled.div`
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-
   letter-spacing: -0.01em;
-
   color: rgba(255, 255, 255, 0.8);
   padding: 72px 0;
 `;
 const Img = styled.img`
-  @media (max-width: 360px) {
-    width: 360px;
-    height: 563px;
+  @media (min-width: 1440px) {
+    width: 460px;
+    height: 720px;
   }
 `;
 const Img2 = styled.img`
-  @media (max-width: 360px) {
-    width: 280px;
-    height: 436px;
-    margin-left: -16px;
-  }
+  margin-left: -16px;
+
+  @media (min-width: 1440px) {
+    width: 360px;
+    height: 560px;
+    margin: 0;
+  } ;
 `;
 
 const Agenda: React.FC<IProps> = () => {

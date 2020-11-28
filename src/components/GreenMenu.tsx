@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import close from "../assets/close.svg";
-import { Column, Row } from "./flex";
+import { Row } from "./flex";
 import MenuTitle from "./MenuTitle";
 
 interface IProps {
@@ -10,6 +10,7 @@ interface IProps {
 
 const Root = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   background: #00a575;
@@ -18,7 +19,7 @@ const Root = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 16px;
+  padding: 0 16px;
   @media (min-width: 1440px) {
     left: 50%;
   }

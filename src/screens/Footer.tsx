@@ -1,4 +1,3 @@
-import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 import React from "react";
 import Subtitle from "../components/Subtitle";
@@ -41,9 +40,3 @@ const Footer: React.FC<IProps> = () => {
   );
 };
 export default Footer;
-
-//style={{
-//             cursor: "pointer",
-//             position: "absolute",
-//             whiteSpace: "nowrap",
-//           }}

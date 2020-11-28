@@ -21,6 +21,10 @@ const Text = styled.div`
   text-transform: uppercase;
 
   color: #ffffff;
+  @media (min-width: 1440px) {
+    font-size: 56px;
+    line-height: 66px;
+  }
 `;
 const Num = styled.div`
   font-family: IBM Plex Sans;
@@ -32,6 +36,10 @@ const Num = styled.div`
   letter-spacing: -0.01em;
 
   color: #ffffff;
+  padding: 16px;
+  @media (min-width: 1440px) {
+    padding: 32px;
+  }
 `;
 
 const MenuTitle: React.FC<IProps> = ({ num, text }) => {

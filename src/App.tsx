@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
 import FirstPage from "./screens/FirstPage";
-import Header from "./screens/FirstPage/Header";
 import Agenda from "./screens/Agenda";
 import TimeTable from "./screens/TimeTable";
 import Footer from "./screens/Footer";
@@ -40,7 +39,7 @@ const App: React.FC<IProps> = () => {
   return (
     <Root>
       <FirstPage />
-      {/*<Agenda />*/}
+      <Agenda />
       <TimeTable />
       <Speakers />
       <Contacts />
