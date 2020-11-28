@@ -10,9 +10,10 @@ interface IProps {
 
 const Root = styled.div`
   display: flex;
-  margin: 40px;
-  @media (max-width: 360px) {
-    margin: 16px;
+
+  margin: 16px;
+  @media (min-width: 1440px) {
+    margin: 40px;
   }
 `;
 const SubtitleUpper = styled.div`
@@ -39,9 +40,9 @@ const Sub = styled.div`
 `;
 
 const Img = styled.img`
-  @media (max-width: 360px) {
-    width: 240px;
-    height: 320px;
+  @media (min-width: 1440px) {
+    width: 300px;
+    height: 400px;
   }
 `;
 const Speaker: React.FC<IProps> = ({ pic, position, name, isReverse }) => {

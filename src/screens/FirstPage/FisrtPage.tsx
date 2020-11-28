@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React, { useState } from "react";
-import Header from "../Header";
-import Banner from "../../components/Banner";
+import Header from "./Header";
+import Banner from "./Banner";
 
 interface IProps {}
 

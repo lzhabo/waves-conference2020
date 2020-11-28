@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import React, { useState } from "react";
-import menu from "../assets/menu.svg";
-import logo from "../assets/we-logo.svg";
-import GreenMenu from "../components/GreenMenu";
+import menu from "../../assets/menu.svg";
+import logo from "../../assets/we-logo.svg";
+import GreenMenu from "../../components/GreenMenu";
 
 interface IProps {}
 
@@ -25,8 +25,9 @@ const Register = styled.div`
   text-transform: uppercase;
   cursor: pointer;
   color: #ffffff;
-  @media (max-width: 360px) {
-    display: none;
+  display: none;
+  @media (min-width: 1440px) {
+    display: flex;
   }
 `;
 const Header: React.FC<IProps> = () => {
@@ -42,7 +43,7 @@ const Header: React.FC<IProps> = () => {
         style={{ cursor: "pointer" }}
         onClick={() => setOpened(true)}
       />
-        { opened && <GreenMenu onClose={() => setOpened(false)}/>}
+      {opened && <GreenMenu onClose={() => setOpened(false)} />}
     </Root>
   );
 };

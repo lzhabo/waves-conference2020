@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import FirstPage from "./screens/FirstPage";
-import Header from "./screens/Header";
+import Header from "./screens/FirstPage/Header";
 import Agenda from "./screens/Agenda";
 import TimeTable from "./screens/TimeTable";
 import Footer from "./screens/Footer";
@@ -31,16 +31,16 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   background-color: black;
-  padding: 0 40px;
-  @media (max-width: 360px) {
-    padding: 0 16px;
+  padding: 0 16px;
+  @media (min-width: 1440px) {
+    padding: 0 40px;
   } ;
 `;
 const App: React.FC<IProps> = () => {
   return (
     <Root>
       <FirstPage />
-      <Agenda />
+      {/*<Agenda />*/}
       <TimeTable />
       <Speakers />
       <Contacts />

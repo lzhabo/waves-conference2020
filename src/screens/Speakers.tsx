@@ -9,9 +9,9 @@ interface IProps {}
 const Root = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 240px 0;
-  @media (max-width: 360px) {
-    padding: 64px 0;
+  padding: 64px 0;
+  @media (min-width: 1440px) {
+    padding: 240px 0;
   }
 `;
 const speakersData = [
@@ -48,7 +48,7 @@ const ScrollContainer = styled.div`
     margin-left: 0px;
   }
   & > :last-child {
-    margin-right: -40px;
+    margin-right: -16px;
   }
 `;
 const Speakers: React.FC<IProps> = () => {

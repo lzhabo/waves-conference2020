@@ -13,25 +13,31 @@ const Root = styled.div`
   display: flex;
   border-bottom: 2px solid rgba(255, 255, 255, 0.24);
   justify-content: space-around;
-  padding: 56px 100px;
+  padding: 56px 0;
+
   width: 100%;
-  @media (max-width: 360px) {
-    flex-direction: column;
-    padding: 56px 0;
+  flex-direction: column;
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    padding: 56px 100px;
   }
 `;
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 660px;
+
   flex: 3;
+  @media (min-width: 1440px) {
+    width: 100%;
+    max-width: 660px;
+  }
 `;
 const Time = styled.div`
   display: flex;
   flex: 2;
-  @media (max-width: 360px) {
-    padding-bottom: 56px;
+  padding-bottom: 56px;
+  @media (min-width: 1440px) {
+    padding: 56px 100px;
   }
 `;
 const Event: React.FC<IProps> = ({ time, title, subtitle }) => {
