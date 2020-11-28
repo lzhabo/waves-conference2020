@@ -37,6 +37,7 @@ const ContentWrapper = styled.div`
 const CloseBtn = styled.img`
   position: absolute;
   right: 0;
+  top: 0;
   padding: 21px;
 `;
 
