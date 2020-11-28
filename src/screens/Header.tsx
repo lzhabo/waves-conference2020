@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import React, { useState } from "react";
 import menu from "../assets/menu.svg";
 import logo from "../assets/we-logo.svg";
+import GreenMenu from "../components/GreenMenu";
 
 interface IProps {}
 
@@ -37,10 +38,11 @@ const Header: React.FC<IProps> = () => {
       <img src={logo} alt="logo" />
       <img
         src={menu}
-        alt="logo"
+        alt="menu"
         style={{ cursor: "pointer" }}
         onClick={() => setOpened(true)}
       />
+        { opened && <GreenMenu onClose={() => setOpened(false)}/>}
     </Root>
   );
 };

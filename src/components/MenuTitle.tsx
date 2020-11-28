@@ -4,7 +4,6 @@ import React from "react";
 interface IProps {
   text: string;
   num: number;
-  isReverse: boolean;
 }
 
 const Root = styled.div`
@@ -33,7 +32,6 @@ const Num = styled.div`
   letter-spacing: -0.01em;
 
   color: #ffffff;
-  padding: 16px;
 `;
 
 const MenuTitle: React.FC<IProps> = ({ num, text }) => {

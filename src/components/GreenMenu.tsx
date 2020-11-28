@@ -1,20 +1,36 @@
 import styled from "@emotion/styled";
 import React from "react";
 import close from "../assets/close.svg";
-import { FlexContainer } from "./FlexContaner";
+import { Column, Row } from "./flex";
 import MenuTitle from "./MenuTitle";
 
-interface IProps {}
+interface IProps {
+  onClose: () => void;
+}
 
 const Root = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: #00a575;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 16px;
+  @media (min-width: 1440px) {
+    left: 50%;
+  }
+`;
+
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  @media (min-width: 1440px) {
+    width: 640px;
+  }
 `;
 
 const CloseBtn = styled.img`
@@ -22,37 +38,25 @@ const CloseBtn = styled.img`
   right: 0;
   padding: 21px;
 `;
-const menuData = [
-  {
-    text: "повестка",
-    num: 1,
-    isReverse: true,
-  },
-  {
-    text: "расписание",
-    num: 2,
-    isReverse: false,
-  },
-  {
-    text: "спикеры",
-    num: 3,
-    isReverse: true,
-  },
-  {
-    text: "контакты",
-    num: 4,
-    isReverse: false,
-  },
-];
-const GreenMenu: React.FC<IProps> = () => {
+
+const GreenMenu: React.FC<IProps> = ({ onClose }) => {
   return (
     <Root>
-      <CloseBtn src={close} />
-      <FlexContainer flexDirection="column" style={{ textAlign: "right" }}>
-        {menuData.map((menu, index) => (
-          <MenuTitle {...menu} key={index} />
-        ))}
-      </FlexContainer>
+      <CloseBtn onClick={onClose} src={close} />
+      <ContentWrapper>
+        <Row>
+          <MenuTitle text="повестка" num={1} />
+        </Row>
+        <Row justifyContent="flex-end">
+          <MenuTitle text="расписание" num={2} />
+        </Row>
+        <Row>
+          <MenuTitle text="спикеры" num={3} />
+        </Row>
+        <Row justifyContent="flex-end">
+          <MenuTitle text="контакты" num={4} />
+        </Row>
+      </ContentWrapper>
     </Root>
   );
 };
