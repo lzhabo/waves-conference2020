@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.js": "/waves-conference2020/static/js/main.ceaf7ce5.chunk.js",
+    "main.js.map": "/waves-conference2020/static/js/main.ceaf7ce5.chunk.js.map",
+    "runtime-main.js": "/waves-conference2020/static/js/runtime-main.b3748fe7.js",
+    "runtime-main.js.map": "/waves-conference2020/static/js/runtime-main.b3748fe7.js.map",
+    "static/css/2.679831fc.chunk.css": "/waves-conference2020/static/css/2.679831fc.chunk.css",
+    "static/js/2.56c08c01.chunk.js": "/waves-conference2020/static/js/2.56c08c01.chunk.js",
+    "static/js/2.56c08c01.chunk.js.map": "/waves-conference2020/static/js/2.56c08c01.chunk.js.map",
+    "static/js/3.cf0f16f5.chunk.js": "/waves-conference2020/static/js/3.cf0f16f5.chunk.js",
+    "static/js/3.cf0f16f5.chunk.js.map": "/waves-conference2020/static/js/3.cf0f16f5.chunk.js.map",
+    "index.html": "/waves-conference2020/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/waves-conference2020/static/css/2.679831fc.chunk.css.map",
+    "static/js/2.56c08c01.chunk.js.LICENSE.txt": "/waves-conference2020/static/js/2.56c08c01.chunk.js.LICENSE.txt",
+    "static/media/IBMPlexSans-Regular.0519459d.ttf": "/waves-conference2020/static/media/IBMPlexSans-Regular.0519459d.ttf",
+    "static/media/TenorSans-Regular.a98abf4c.ttf": "/waves-conference2020/static/media/TenorSans-Regular.a98abf4c.ttf",
+    "static/media/close.0f838210.svg": "/waves-conference2020/static/media/close.0f838210.svg",
+    "static/media/graphic.e3f99edb.svg": "/waves-conference2020/static/media/graphic.e3f99edb.svg",
+    "static/media/man.d3fcc5b9.svg": "/waves-conference2020/static/media/man.d3fcc5b9.svg",
+    "static/media/menu.cb86003e.svg": "/waves-conference2020/static/media/menu.cb86003e.svg",
+    "static/media/money.27e25322.svg": "/waves-conference2020/static/media/money.27e25322.svg",
+    "static/media/small-graphic.bc7a7a49.svg": "/waves-conference2020/static/media/small-graphic.bc7a7a49.svg",
+    "static/media/speaker.08a0e4a2.svg": "/waves-conference2020/static/media/speaker.08a0e4a2.svg",
+    "static/media/we-logo.d74d3c50.svg": "/waves-conference2020/static/media/we-logo.d74d3c50.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3748fe7.js",
+    "static/css/2.679831fc.chunk.css",
+    "static/js/2.56c08c01.chunk.js",
+    "static/js/main.ceaf7ce5.chunk.js"
+  ]
+}
